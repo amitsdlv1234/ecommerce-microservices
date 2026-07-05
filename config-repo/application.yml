@@ -1,0 +1,9 @@
+project:
+  name: ShopSphere
+
+server:
+  message: Config Server Working Successfully
+
+spring:
+  application:
+    description: Central Configuration Repository
