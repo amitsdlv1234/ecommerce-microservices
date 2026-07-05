@@ -18,6 +18,10 @@
         Parent project for Event Driven E-Commerce Microservices
     </description>
 
+    <modules>
+        <module>common-library</module>
+    </modules>
+
     <properties>
 
         <!-- Java -->
