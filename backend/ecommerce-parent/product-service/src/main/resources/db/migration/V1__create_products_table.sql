@@ -1,0 +1,29 @@
+CREATE TABLE products (
+
+    id BIGSERIAL PRIMARY KEY,
+
+    sku VARCHAR(50) NOT NULL UNIQUE,
+
+    name VARCHAR(255) NOT NULL,
+
+    description TEXT,
+
+    brand VARCHAR(150),
+
+    category VARCHAR(150),
+
+    price NUMERIC(15,2) NOT NULL,
+
+    active BOOLEAN NOT NULL DEFAULT TRUE,
+
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    created_by VARCHAR(100),
+
+    updated_by VARCHAR(100),
+
+    version BIGINT NOT NULL DEFAULT 0
+
+);
